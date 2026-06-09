@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: #151515;
+  color: #f6ead8;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top right, rgba(120, 24, 34, 0.35), transparent 32%),
+    #151515;
+}
+
+/* NAVBAR */
+
+.navbar {
+  min-height: 92px;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+  background: rgba(21, 21, 21, 0.92);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 28px;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  color: #d4af37;
+}
+
+/* HERO */
+
+.hero {
+  padding: 80px 8%;
+  min-height: calc(100vh - 92px);
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.eyebrow {
+  color: #d4af37;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 6vw, 78px);
+  line-height: 0.95;
+  max-width: 760px;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #e5d4bb;
+  max-width: 560px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  margin-top: 35px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-size: 16px;
+  transition: 0.25s ease;
+}
+
+.primary {
+  background: #8b1e2d;
+  color: #fff;
+}
+
+.primary:hover {
+  background: #a92a3b;
+  transform: translateY(-2px);
+}
+
+.secondary {
+  border: 1px solid #d4af37;
+  color: #f6ead8;
+}
+
+.secondary:hover {
+  background: rgba(212, 175, 55, 0.12);
+}
+
+.hero-image {
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+  background: #2b1015;
+}
+
+.hero-image img {
+  width: 100%;
+  display: block;
+}
+
+/* SECTIONS */
+
+.section {
+  padding: 90px 8%;
+}
+
+.section h2,
+.contact h2 {
+  font-size: clamp(34px, 4vw, 54px);
+  margin-bottom: 35px;
+}
+
+.light {
+  background: #f6ead8;
+  color: #1c1c1c;
+}
+
+.light .eyebrow {
+  color: #8b1e2d;
+}
+
+.dark {
+  background: #151515;
+  color: #f6ead8;
+}
+
+/* CARDS */
+
+.cards,
+.delivery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card,
+.delivery-card {
+  padding: 32px;
+  border-radius: 24px;
+  background: #fffaf0;
+  border: 1px solid rgba(139, 30, 45, 0.15);
+}
+
+.card span {
+  color: #8b1e2d;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.card h3,
+.delivery-card h3 {
+  margin: 18px 0 12px;
+  font-size: 26px;
+}
+
+.card p,
+.delivery-card p {
+  color: #4d4037;
+  line-height: 1.6;
+}
+
+.delivery-card strong {
+  display: block;
+  color: #8b1e2d;
+  margin-bottom: 12px;
+}
+
+/* PRODUCTOS */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+}
+
+.product-grid div {
+  min-height: 120px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #8b1e2d, #3b1519);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+}
+
+/* CONTACT */
+
+.contact {
+  padding: 90px 8%;
+  text-align: center;
+  background: linear-gradient(135deg, #8b1e2d, #221111);
+}
+
+.contact p {
+  margin-bottom: 28px;
+  color: #eadbc4;
+  font-size: 18px;
+}
+
+footer {
+  padding: 28px 8%;
+  text-align: center;
+  color: #b9aa92;
+  background: #101010;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .navbar nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 55px;
+  }
+
+  .cards,
+  .delivery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .logo {
+    width: 125px;
+  }
+
+  .hero,
+  .section,
+  .contact {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}

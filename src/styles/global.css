@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: #141414;
+  color: #f7ead8;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+
+main {
+  overflow: hidden;
+}
+
+
+section {
+  width: 100%;
+}
