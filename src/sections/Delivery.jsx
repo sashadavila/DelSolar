@@ -6,8 +6,9 @@ function Delivery() {
         <section id="entregas" className="delivery">
 
             <h2>
-                Servicio de entrega a domicilio
+                Zonas de entrega
             </h2>
+
 
             <div className="delivery-container">
 
@@ -16,16 +17,17 @@ function Delivery() {
 
                     <div className="delivery-header">
                         <FaTruck />
-                        <h3>DON TORCUATO</h3>
+                        <h3>
+                            Torcuato, Gral Pacheco, Adolfo Sordeaux y Los Polvorines
+                        </h3>
                     </div>
 
                     <strong>
-                        Entregas en el día
+                        Entrega en el día
                     </strong>
 
                     <p>
-                        De lunes a viernes. Pedidos antes de las 14:00 hs
-                        y recibí en el día.
+                        Realizá tu pedido antes de las 12hs y recibilo en el día.
                     </p>
 
                 </article>
@@ -36,7 +38,32 @@ function Delivery() {
 
                     <div className="delivery-header">
                         <FaTruck />
-                        <h3>SAN MIGUEL</h3>
+                        <h3>
+                            San Isidro y Vicente López
+                        </h3>
+                    </div>
+
+                    <strong>
+                        Entregas los martes
+                    </strong>
+
+                    <p>
+                        Realizá tu pedido antes del lunes 12hs y recibilo
+                        el martes entre 10hs y 19hs.
+                    </p>
+
+                </article>
+
+
+
+
+                <article className="delivery-card">
+
+                    <div className="delivery-header">
+                        <FaTruck />
+                        <h3>
+                            Corredor Nordelta
+                        </h3>
                     </div>
 
                     <strong>
@@ -44,11 +71,12 @@ function Delivery() {
                     </strong>
 
                     <p>
-                        De 10hs a 16hs. Pedido antes del lunes
-                        14:00 hs.
+                        Realizá tu pedido antes del martes 12hs y recibilo
+                        el miércoles entre 10hs y 19hs.
                     </p>
 
                 </article>
+
 
 
 
@@ -56,22 +84,30 @@ function Delivery() {
 
                     <div className="delivery-header">
                         <FaTruck />
-                        <h3>PABLO NOGUÉS</h3>
+                        <h3>
+                            Ingeniero Maschwitz, Escobar, Loma Verde y Cardales
+                        </h3>
                     </div>
 
                     <strong>
-                        Entregas los viernes
+                        Entregas los jueves
                     </strong>
 
                     <p>
-                        De 10hs a 16hs. Pedido antes del jueves
-                        14:00 hs.
+                        Realizá tu pedido antes del miércoles 12hs y recibilo
+                        el jueves de 10hs a 19hs.
                     </p>
 
                 </article>
 
 
             </div>
+
+
+            <p className="delivery-extra">
+                ¿Estás en otra zona? Consultanos por WhatsApp.
+            </p>
+
 
         </section>
     );

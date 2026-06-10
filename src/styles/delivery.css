@@ -9,6 +9,7 @@
 }
 
 
+
 .delivery h2 {
 
   font-size:45px;
@@ -25,9 +26,9 @@
 
   display:grid;
 
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(2,1fr);
 
-  gap:25px;
+  gap:28px;
 
 }
 
@@ -43,6 +44,7 @@
 
   border-radius:25px;
 
+
   border:1px solid rgba(139,30,45,.2);
 
 
@@ -51,9 +53,11 @@
 }
 
 
+
 .delivery-card:hover {
 
   transform:translateY(-8px);
+
 
   box-shadow:
   0 18px 40px rgba(0,0,0,.15);
@@ -68,27 +72,34 @@
 
   display:flex;
 
-  align-items:center;
+  align-items:flex-start;
 
-  gap:14px;
+  gap:15px;
 
-  margin-bottom:18px;
+
+  margin-bottom:20px;
 
 }
 
 
+
 .delivery-header svg {
+
+  min-width:42px;
 
   width:42px;
 
   height:42px;
 
+
   padding:9px;
+
 
   border-radius:50%;
 
 
   background:#8b1e2d;
+
 
   color:#d4af37;
 
@@ -98,7 +109,10 @@
 
 .delivery h3 {
 
-  font-size:25px;
+  font-size:23px;
+
+  line-height:1.25;
+
 
   color:#8b1e2d;
 
@@ -110,7 +124,12 @@
 
   display:block;
 
+
   margin-bottom:15px;
+
+
+  font-size:18px;
+
 
   color:#333;
 
@@ -122,20 +141,82 @@
 
   line-height:1.6;
 
+
   color:#4d4037;
+
+
+  font-size:16px;
 
 }
 
 
 
+/* CONSULTA WHATSAPP */
+
+.delivery-extra {
+
+  margin-top:45px;
+
+
+  text-align:center;
+
+
+  font-size:22px;
+
+
+  color:#8b1e2d;
+
+
+  font-weight:700;
+
+}
+
+
+
+
 /* RESPONSIVE */
 
-@media(max-width:800px){
+@media(max-width:900px){
 
 
 .delivery-container {
 
-grid-template-columns:1fr;
+  grid-template-columns:1fr;
+
+}
+
+
+}
+
+
+
+@media(max-width:500px){
+
+
+.delivery {
+
+padding:70px 6%;
+
+}
+
+
+.delivery h2 {
+
+font-size:35px;
+
+}
+
+
+.delivery-card {
+
+padding:28px;
+
+}
+
+
+.delivery h3 {
+
+font-size:20px;
 
 }
 
