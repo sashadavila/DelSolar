@@ -15,7 +15,7 @@ function Navbar() {
                 />
 
                 <span>
-                    Del Solar
+                    Del Solar Granja Gourmet
                 </span>
 
             </div>

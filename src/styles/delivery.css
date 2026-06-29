@@ -222,3 +222,39 @@ font-size:20px;
 
 
 }
+.delivery-hours {
+  margin-top: 35px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 25px;
+  border: 1px solid rgba(139,30,45,.2);
+  text-align: center;
+}
+
+.delivery-hours-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.delivery-hours-title svg {
+  color: #d4af37;
+  background: #8b1e2d;
+  width: 42px;
+  height: 42px;
+  padding: 9px;
+  border-radius: 50%;
+}
+
+.delivery-hours-title h3 {
+  color: #8b1e2d;
+  font-size: 28px;
+}
+
+.delivery-hours p {
+  font-size: 17px;
+  color: #4d4037;
+  margin-bottom: 8px;
+}
