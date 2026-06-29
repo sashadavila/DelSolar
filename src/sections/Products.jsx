@@ -4,7 +4,7 @@ import alitas from "../assets/alitasdepollo.jpg";
 import bastones from "../assets/bastones-muzzarella.jpg";
 import chorizos from "../assets/chorizo-cerdo.png";
 import filetMerluza from "../assets/Filet de merluza rebozado.JPG";
-import hamburguesas from "../assets/Hamburguesas.JPG";
+import hamburguesas from "../assets/Hamburguesas.jpg";
 import hamburguesasCarne from "../assets/hamburguesasdecarne.jpg";
 import lomitos from "../assets/lomitos de pollo deshuesado.JPG";
 import medallonesSaborizados from "../assets/Medallones de pollo saborizados.JPG";
