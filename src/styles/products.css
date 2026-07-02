@@ -149,3 +149,15 @@
     font-size: 35px;
   }
 }
+
+.catalog-category {
+  margin-bottom: 70px;
+}
+
+.category-title {
+  font-size: 32px;
+  color: #d4af37;
+  margin-bottom: 28px;
+  border-left: 4px solid #8b1e2d;
+  padding-left: 16px;
+}

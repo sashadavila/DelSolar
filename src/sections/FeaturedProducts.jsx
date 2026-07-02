@@ -1,8 +1,8 @@
 import "../styles/products.css";
 
-import milanesas from "../assets/milanesas de pollo.JPG";
-import pataymuslo from "../assets/pata muslo de pollo.PNG";
-import solomillo from "../assets/solomillo.jpg";
+import milanesas from "../assets/milanesa pollo.png";
+import pataymuslo from "../assets/pata muslo.png";
+import solomillo from "../assets/solomillo.png";
 
 function FeaturedProducts() {
   return (
